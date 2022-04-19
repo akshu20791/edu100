@@ -1,0 +1,20 @@
+
+####################create a contatiner from existing container via image###############
+
+docker run -it --name akshat ubuntu /bin/bash
+[]# touch file1
+[]#apt-get install apache2 -y
+[]#which apache2
+
+docker commit akshat updateimage
+
+docker images 
+
+docker run -it --name edureka3 updateimage /bin/bash
+[]# ls
+
+(you will see file1)
+
+[]#which apache2
+
+(you will see apache2 location) 
