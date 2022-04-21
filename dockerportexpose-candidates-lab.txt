@@ -1,0 +1,29 @@
+##############DOCKER PORT EXPOSE##############
+
+1) 
+
+docker run -td --name eduserver -p 8080:80 ubuntu
+
+2) docker exec -it eduserver /bin/bash
+   
+  apt-get update -y
+  apt-get install apache2 -y
+ (write asia and kolkata)
+
+  cd /var/www/html
+  cat >index.html (press enter)
+  hello world 
+  (now press ctrl + D)
+  service apache2 start
+
+3) now go to aws 
+   select machine
+   below you will see security tab
+   click on the tab
+   open the blue color (sg_.....) the security group
+   now inbound rules
+   add rule -> custom tcp -> 8080 -> anywhere ipv4
+   save
+
+4) now check : <<public ip address>>:8080
+
