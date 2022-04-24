@@ -1,0 +1,11 @@
+Build job in jenkins 
+
+1) Build job -> freestlye -> Build -> windows batch command -> echo "hello world"
+
+2) now save and go to dashboard -> click on the drop down near the name of your job -> build now
+
+###TO CHECK THE LOGS OF BUILD #########
+
+3) click on the job 
+4) click on the last build 
+5) now there you need to click on the console output
